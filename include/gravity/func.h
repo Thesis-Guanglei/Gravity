@@ -2586,5 +2586,11 @@ namespace gravity {
     func_ get_poly_derivative(constant_* c, const param_ &v); /*< Get the derivative of c with respect to v) */
 }
 
+/** A function with polymorphic numerical precision */
+template<typename type = double>
+class func: public vat<type>, public func_ {
+    
+}
+
 #endif /* func_h */
 
