@@ -423,5 +423,6 @@ int main (int argc, const char * argv[])
     SOCP.add_var(x^10); /* Will add a vector of size 10 representing variables named x */
     SOCP.add_constraint(SOC.in(bus_pairs) <= 0); /* Will add second-order constraints indexed by bus_pairs (see previous Code Block) */
     SOCP.min(x+2*y); /* Declaring the objective function */
+    
     return 0;
    } 
